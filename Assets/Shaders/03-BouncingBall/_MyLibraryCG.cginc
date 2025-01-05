@@ -1,6 +1,4 @@
-﻿#include <UnityCG.cginc>
-
-// Rotate around custom axis.
+﻿// Rotate around custom axis.
 // The axis vector has to be normalized.
 float3x3 rotMtxCustomAxis (float angleRad, float3 axis)
 {

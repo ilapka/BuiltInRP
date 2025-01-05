@@ -115,7 +115,7 @@ Shader "Custom/Unlit/BouncingBall"
                 }
 
                 half3 rotatedNormal = mul(animationRotation, v.normal);
-                float3 worldPivot = mul(unity_ObjectToWorld, float4(v.vertex, 1.0)).xyz; // - float3(0, normalLenght, 0);
+                float3 worldPivot = mul(unity_ObjectToWorld, float4(v.vertex, 1.0)).xyz;
                 float3 worldOffsetDir = UnityObjectToWorldDir(rotatedNormal) * _SphereRadius + float3(0, _SphereRadius, 0);
                 
                 // Squash ball when it dives "under ground"
