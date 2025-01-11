@@ -107,6 +107,8 @@ Shader "Custom/MeshParticle"
         {
             Pass
             {
+                Name "Target 3.0"
+                
                 CGPROGRAM
                 #pragma target 3.0
                 //This pass will run code from 'CGINCLUDE' above
@@ -114,6 +116,8 @@ Shader "Custom/MeshParticle"
             }
             Pass
             {
+                Name "Target 2.5 (Default)"
+                
                 CGPROGRAM
                 #pragma target 2.5 //Default render target
                 //This pass will run code from 'CGINCLUDE' above
@@ -121,6 +125,8 @@ Shader "Custom/MeshParticle"
             }
             Pass
             {
+                Name "Target 2.0"
+
                 CGPROGRAM
                 #pragma target 2.0
                 //This pass will run code from 'CGINCLUDE' above
